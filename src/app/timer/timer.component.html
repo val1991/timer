@@ -1,0 +1,12 @@
+<div>
+    <span>{{ timer.hours }}</span>
+    <span> : </span>
+    <span>{{ timer.minutes }}</span>
+    <span> : </span>
+    <span>{{ timer.seconds }}</span>
+</div>
+<div>
+    <button (click)='onStartStop(!isRun ? "start" : "stop")'>{{!isRun ? "start" : "stop"}}</button>
+    <button (click)='onWait()'>wait</button>
+    <button (click)='onReset()'>reset</button>
+</div>
